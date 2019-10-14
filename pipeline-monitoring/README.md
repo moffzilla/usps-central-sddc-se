@@ -41,27 +41,31 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
  
 	A deamon set is deployed at the Kubernetes cluster for vROPs able to connect and pull KPI data from the cluster.
 	Instructions for configuring vROPs can be found here: 
-	https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations-Manager/1.4.1/container-monitoring/GUID-87AEB0B9-EB85-4DDC-AD31-1AEE1179C4B4.html
 	
-	A sample of the deamon set can be found here:
-	xxxxx
+	For deploying DeamonSet : https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations-Manager/1.4.1/container-monitoring/GUID-13C06790-C129-4547-B81C-FDCA2BEB29BC.html
+	
+	For configuring connection https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations-Manager/1.4.1/container-monitoring/GUID-87AEB0B9-EB85-4DDC-AD31-1AEE1179C4B4.html
+	
+	A sample of the cAdvisor can be found here:
+	https://github.com/moffzilla/vrops-k8-monitoring
 	
 	Example:
-	![Connection Sample](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vrops-k8-connection-sample.png)
+![Connection Sample](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vrops-k8-connection-sample.png)
 	
 	After accepting the certificate there is a warning, just accept and save.
 	wait for a few minutes so vROPs can connect and start collecting
-	![vrops-k8-collecting](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vrops-k8-collecting.png)
+![vrops-k8-collecting](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vrops-k8-collecting.png)
 	
 	At this point you can access the Kubernetes Overview Dashboard and see any KPI related to any pre-deployed POD, namespaces, etc.
+	
+	Full doc reference : https://docs.vmware.com/en/Management-Packs-for-vRealize-Operations-Manager/index.html
   
 2.- Kubernetes Cluster to Wavefront
  
 	Instructions for configuring Wavefront to Kubernetes can be found here:
 	https://vmware.wavefront.com/integration/kubernetes/setup
 	Please note that the API will be required but normally the documentation itself shows it
-	Basically a DeamonSet is deployed at the cluster level and samples can be found here:  
-	xxxxxxx
+	Basically a DeamonSet is deployed at the cluster level and samples can be found at the same documentation
 	After that you can access the default dashboards and you should be able to collect and see any KPI related to any pre-deployed POD, namespaces, etc.
 
   
