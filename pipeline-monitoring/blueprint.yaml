@@ -1,0 +1,21 @@
+formatVersion: 1
+inputs:
+  nsname:
+    type: string
+    pattern: '[a-z0-9]'
+    title: Enter Name for Namespace
+    description: Namespace Name
+  env:
+    type: string
+    enum:
+      - Cloud
+      - On-Prem
+    default: Cloud
+    title: Environment
+    description: Core Environment
+resources:
+  Cloud_K8S_Namespace_1:
+    type: Cloud.K8S.Namespace
+    properties:
+      name: '${to_lower(input.nsname)}'
+      constraints: '${to_lower(input.env) == "cloud" ? "cloud:pks" : "cloud:vsphere:pks" }'
