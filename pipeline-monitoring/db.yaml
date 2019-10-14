@@ -1,0 +1,27 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: db
+  namespace: 10001-namespace
+  labels:
+    app: bootcamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bootcamp
+      role: db
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: bootcamp
+        role: db
+        tier: backend
+    spec:
+      containers:
+      - name: db
+        image: mofeta/cmbu-db-app:latest
+        ports:
+        - containerPort: 5432
+

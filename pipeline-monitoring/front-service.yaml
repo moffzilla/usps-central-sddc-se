@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  namespace: 3000-namespace
+  labels:
+    app: bootcamp
+    role: web
+    tier: frontend
+spec:  
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: bootcamp
+    role: web
+    tier: frontend
+    type: LoadBalancer

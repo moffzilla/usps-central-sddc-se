@@ -1,0 +1,26 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: pyapi
+  namespace: 10001-namespace
+  labels:
+    app: bootcamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bootcamp
+      role: api
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: bootcamp
+        role: api
+        tier: backend
+    spec:
+      containers:
+      - name: pyapi
+        image: mofeta/cmbu-app-app:latest
+        ports:
+        - containerPort: 80
