@@ -66,14 +66,16 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
 	https://vmware.wavefront.com/integration/kubernetes/setup
 	Please note that the API will be required but normally the documentation itself shows it
 	Basically a DeamonSet is deployed at the cluster level and samples can be found at the same documentation
-	After that you can access the default dashboards and you should be able to collect and see any KPI related to any pre-deployed POD, namespaces, etc.
+	After that you can access the default dashboards and you should be able to collect and see any KPI related 
+	to any pre-deployed POD, namespaces, etc.
 
   
 3.- Kubernetes Cluster to vRealize Automation 
  
 	Log in to vRealize Automation 
  
-	Verify under infrastructure - Resources - Kubernetes that your Kubernetes cluster is already added and you have donwloaded kubeconfig:
+	Verify under infrastructure - Resources - Kubernetes that your Kubernetes cluster is already
+	added and you have donwloaded kubeconfig:
 	
 ![vra-infra-k8-cluster](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-cluster.png)
 
@@ -85,7 +87,8 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
 
 ![vra-infra-k8-zones-cluster](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-zones-cluster.png)
 
-	Create a NameSpace blueprint and make sure it has the right tag constraints associated to your Kubernetes Cloud Zone and resources
+	Create a NameSpace blueprint and make sure it has the right tag constraints associated to your 
+	Kubernetes Cloud Zone and resources
 	A sample can be downloaded here :
 	
 https://github.com/moffzilla/usps-central-sddc-se/blob/master/pipeline-monitoring/blueprint.yaml
