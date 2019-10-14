@@ -5,13 +5,13 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
 
 1.- Kubernetes Cluster
  
-	Any reachable Kubernetes cluster, at least a Master and a worker, 
+	Any reachable Kubernetes cluster, at least one Master and one worker, 
 	this demo has been tested with K8 v1.12.9 on Cloud PKS,
 	it is assumed that kubeclt is configured and you can deploy apps stand-alone.
   
    ![K8-Cluster](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/kubernetes-cluster.png)
   
-2.- vROPs and VMware vRealize Operations Management Pack for Container Monitoring
+2.- vROPs and VMware vRealize Operations Management Pack for Container Monitoring ![vrops-mgmt-pack-containers](https://marketplace.vmware.com/vsx/solutions/vrealize-operations-management-pack-for-container-monitoring?ref=search#summary)
  
 	This demo has been tested with vROPs 7.5 and vRealize Operations Management Pack 
 	for Container Monitoring version 1.14.1 and assumes that they have been installed, 
@@ -21,7 +21,7 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
   
 3.- Wavefront
  
-	This demo has been tested with Wavefront by [ VMware Sandbox ](https://vmware.wavefront.com/) 
+	This demo has been tested with Wavefront by ![VMware Sandbox](https://vmware.wavefront.com/) 
 	and assumes it is configured and ready, however instructions below are provided to integrate Wavefront with K8.
 
 ![Wavefront](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/wavefront.png)
@@ -39,7 +39,7 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
 
 1.- Kubernetes Cluster to vROPs
  
-	Any reachable Kubernetes cluster, at least a Master and a worker, 
+	Instructions for configuring vROPs can be found here:yhjuyi, 
 	this demo has been tested with K8 v1.12.9 on Cloud PKS,
 	it is assumed that kubeclt is configured and you can deploy apps stand-alone.
   
