@@ -74,16 +74,20 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
 	Log in to vRealize Automation 
  
 	Verify under infrastructure - Resources - Kubernetes that your Kubernetes cluster is already added and you have donwloaded kubeconfig:
+	
 ![vra-infra-k8-cluster](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-cluster.png)
 
 	Verify under infrastructure - Configure - Kubernetes Zones that your Kubernetes cluster is already set up, 
+	
 ![vra-infra-k8-zones-tab](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-zones-tab.png)
 
 make sure that your cluster is included in this zone ( Cluster Tab ) 
+
 ![vra-infra-k8-zones-cluster](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-zones-cluster.png)
 
 	Create a NameSpace blueprint and make sure it has the right tag constraints associated to your Kubernetes Cloud Zone and resources
 	A sample can be downloaded here :
+	
 	https://github.com/moffzilla/usps-central-sddc-se/blob/master/pipeline-monitoring/blueprint.yaml
 	
 	
