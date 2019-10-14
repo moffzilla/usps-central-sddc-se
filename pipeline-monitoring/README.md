@@ -79,7 +79,8 @@ This demo showcase how Ms Apps could be deployed in CI/CD Fashion on any K8 clus
 	
 ![vra-infra-k8-cluster](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-cluster.png)
 
-	Verify under infrastructure - Configure - Kubernetes Zones that your Kubernetes cluster is already set up, 
+	Verify under infrastructure - Configure - Kubernetes Zones 
+	that your Kubernetes cluster is already set up, 
 	
 ![vra-infra-k8-zones-tab](https://github.com/moffzilla/usps-central-sddc-se/blob/master/media/vra-infra-k8-zones-tab.png)
 
